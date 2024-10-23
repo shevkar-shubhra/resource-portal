@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7; /* Light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.auth-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width for the form */
+    text-align: center; /* Center align text */
+}
+
+.auth-container h1 {
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.auth-container input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Space inside the input */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for the inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.auth-container button {
+    width: 100%; /* Full width for buttons */
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.auth-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.auth-container button:last-child {
+    background-color: transparent; /* Transparent for switch button */
+    color: #007bff; /* Blue text color */
+    border: 1px solid #007bff; /* Border matching primary color */
+}
+
+.auth-container button:last-child:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* White text color on hover */
+}
