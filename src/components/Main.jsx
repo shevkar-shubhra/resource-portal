@@ -24,7 +24,7 @@ const LandingPage = () => {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#resources">Resources</a></li>
                         <li><a href="#forum">Forum</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <Link to={'/contact'}><li><a href="#contact">Contact</a></li></Link>
                         <Link to={'/login'}><li><span className="btn">Login</span></li></Link>
                     </ul>
                     <div className="hamburger" onClick={toggleMenu}>
