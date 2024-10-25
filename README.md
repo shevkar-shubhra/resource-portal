@@ -10,9 +10,11 @@ Accessing Resources:
 
 -A search bar allows students to quickly locate specific resources or materials for particular topics.
 
+
 Uploading Resources:
 
 -Students can upload course-related resources like notes, assignments, project reports, and study guides through a user-friendly form
+
 
 Feedback:
 
