@@ -13,8 +13,7 @@ const App = () => {
         <Route path="/login" element={<AuthContainer />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/resource" element={<ResourcePage />} />
-        <Route path='/contact' element={<ContactForm/>}/>
-
+        <Route path='/contact' element={<ContactForm />} />
       </Routes>
     </BrowserRouter>
   );

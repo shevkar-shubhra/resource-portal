@@ -7,31 +7,32 @@ import { auth } from '../firebase';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
-    const [username,setUsername] = useState('');
+    const [username, setUsername] = useState('');
 
-    useEffect(()=>{
-        onAuthStateChanged(auth,(user)=>{
-            if(user){
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
                 setUsername(user.uid);
-                localStorage.setItem('name',user);
+                localStorage.setItem('name', user);
             }
         })
-    },[])
-    
-    
+    }, [])
+
+
 
     return (
         <div className="landing-page">
 
 
-            
+
 
             <section className="hero-section">
                 <div className="hero-overlay"></div>
                 <div className="hero-content">
                     <h1>Empower Your <span>Learning</span> Journey</h1>
                     <p className="typewriter">Access semester-wise resources, reviews, and feedback.</p>
-                    <button className="cta-btn">Get Started <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <Link to={'/login'}><button className="cta-btn">Get Started <FontAwesomeIcon icon={faArrowRight} /></button>
+                    </Link>
                 </div>
             </section>
 
