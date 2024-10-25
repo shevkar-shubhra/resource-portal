@@ -1,4 +1,3 @@
-
 Resource Portal for COEP Students
 
 The COEP Resource Portal is a dedicated platform designed for COEP students to access, share, and contribute valuable academic resources specific to their courses. With a simple, intuitive interface, the portal ensures easy navigation and streamlined functionality for both resource access and uploads.
