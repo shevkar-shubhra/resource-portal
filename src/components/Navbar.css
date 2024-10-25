@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    position: absolute;
+    align-items: center;
+    width: 100vw;
+    background-color: #222323;
+    height: 10vh;
+    top: 0;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.navbar-logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li span,a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.nav-links li span:hover {
+    color: #f39c12;
+}
+
+.nav-links li .btn {
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 60px; /* Position below the navbar */
+        background-color: #222323;
+        padding: 20px;
+        opacity: 0.8;
+        z-index: 10;
+        gap: 4vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        transition: height 0.3s ease;
+        height: 100vh; /* Set a maximum height for transition */
+        overflow: hidden; /* Hide overflow */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

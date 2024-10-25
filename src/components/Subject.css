@@ -1,0 +1,133 @@
+/* Subject.css */
+
+/* Modal Layout */
+.subject-modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 80vh;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+  }
+  
+  .subject-modal h2 {
+    font-size: 1.8em;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ececec;
+    padding-bottom: 8px;
+  }
+  
+  .subject-modal p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    color: #ff5a5a;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Materials List */
+  .materials-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .materials-list li {
+    margin-bottom: 12px;
+    color: #0a0a0a;
+  }
+  
+  .materials-list a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.2s;
+  }
+  
+  .materials-list a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+  
+  /* Add Material Section */
+  .add-material {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .add-material input[type="text"],
+  .add-material input[type="file"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .add-material button {
+    background-color: #dbae34;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .add-material button:hover {
+    background-color: #dec446;
+  }
+  
+  /* Comments Section */
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comments h3 {
+    font-size: 1.5em;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .subject-modal {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .add-material {
+      flex-direction: column;
+    }
+  
+    .add-material input[type="text"],
+    .add-material input[type="file"],
+    .add-material button {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  
