@@ -41,9 +41,6 @@ const ContactForm = () => {
                     <button type='submit' className='formButton'>Submit</button>
                 </form>
             </div>
-            <div className='right'>
-                <img src='../assets/contact.jpg' className='image'></img>
-            </div>
         </div>
     )
 }

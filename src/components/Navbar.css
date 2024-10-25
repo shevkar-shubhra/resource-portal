@@ -8,10 +8,10 @@
     background-color: #222323;
     height: 10vh;
     top: 0;
-    
+    left: 0;
     padding-left: 20px;
     padding-right: 20px;
-    
+
 }
 
 .navbar-logo h1 {
@@ -29,7 +29,8 @@
     margin-left: 20px;
 }
 
-.nav-links li span,a {
+.nav-links li span,
+a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -55,13 +56,14 @@
     cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
         right: 0px;
-        top: 60px; /* Position below the navbar */
+        top: 60px;
+        /* Position below the navbar */
         background-color: #222323;
         padding: 20px;
         opacity: 0.8;
@@ -71,12 +73,15 @@
         align-items: center;
         justify-content: center;
         transition: height 0.3s ease;
-        height: 100vh; /* Set a maximum height for transition */
-        overflow: hidden; /* Hide overflow */
+        height: 100vh;
+        /* Set a maximum height for transition */
+        overflow: hidden;
+        /* Hide overflow */
     }
 
     .nav-links.active {
-        display: flex; /* Show links when active */
+        display: flex;
+        /* Show links when active */
     }
 
     .hamburger {
