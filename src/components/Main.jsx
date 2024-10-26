@@ -31,7 +31,7 @@ const LandingPage = () => {
                 <div className="hero-content">
                     <h1>Empower Your <span>Learning</span> Journey</h1>
                     <p className="typewriter">Access semester-wise resources, reviews, and feedback.</p>
-                    <Link to={'/login'}><button className="cta-btn">Get Started <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <Link to={'/resource'}><button className="cta-btn">Get Started <FontAwesomeIcon icon={faArrowRight} /></button>
                     </Link>
                 </div>
             </section>
